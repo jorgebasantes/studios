@@ -1,0 +1,102 @@
+html {
+    height: 100vh;
+    overflow: hidden;
+  }
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #222222;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.section1::before {
+    content:"";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: url("images/stars.jpg") top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+    
+  }
+  .section1::after {
+    content:"";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: url("images/0003.png") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(0);
+    
+  }
+  .section1 .text {
+    top:10%;
+    transform: translateZ(-0.5px) scale(1.5,1.6) translate(-33%,10%);
+  }
+.section1, .section2 {
+    width:100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .section2 {
+    background: rgb(68, 19, 46);
+  }
+  .text {
+    top:30%;
+    left:50%;
+    position: absolute;
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 15vw;
+    color:white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+    5px 5px 70px rgba(255,255,255,0.5);
+    transform: scale(1,1.1) translate(-50%, 10%);
+  }
+
+  header {
+    background: rgb(68, 19, 46);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* ensure it stays on top */
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #740bec;
+}

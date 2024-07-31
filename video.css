@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(97, 4, 74), rgb(202, 37, 153), rgb(229, 145, 197));
+    color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgb(97, 4, 74), rgb(202, 37, 153), rgb(229, 145, 197));
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    display: block;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: rgb(72, 5, 134);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #e9ec0b;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3, p {
+    color: #004aad;
+    text-align: center;
+}
+
+.service, .portfolio-item, .testimonial {
+    margin-bottom: 20px;
+}
+
+
+
+.responsive-video {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    background: linear-gradient(rgb(97, 4, 74), rgb(202, 37, 153), rgb(229, 145, 197));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.service video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+footer {
+    background: linear-gradient(rgb(97, 4, 74), rgb(202, 37, 153), rgb(229, 145, 197));
+    color: #fff;
+    padding: 10px ;
+    text-align: center;
+}
+.service img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
