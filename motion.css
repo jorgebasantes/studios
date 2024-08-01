@@ -114,3 +114,17 @@ header nav ul li a:hover {
       font-size: 8vw;
   }
 }
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .section1::after {
+      background-size: contain; /* Adjusts the size so the image is visible */
+      background-position: center; /* Centers the image */
+  }
+}
+
+@media (max-width: 480px) {
+  .section1::after {
+      background-size: 80% auto; /* Scales the image to 80% of the container width */
+      background-position: center; /* Centers the image */
+  }
+}
